@@ -1,0 +1,66 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 1rem 3rem 2rem;
+  height: 50px; }
+  nav #brand {
+    font-family: 'Pacifico', cursive; }
+  nav #phone-number {
+    color: purple;
+    padding: .4rem 1rem; }
+    @media only screen and (max-width: 491px) {
+      nav #phone-number {
+        display: none; } }
+
+.menu-item {
+  margin: 0 10px; }
+
+.menu-desktop {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  right: 10%;
+  visibility: hidden; }
+  @media only screen and (min-width: 980px) {
+    .menu-desktop {
+      visibility: visible; } }
+
+.menu-btn {
+  position: absolute;
+  z-index: 3;
+  right: 35px;
+  top: 25px;
+  cursor: pointer;
+  transition: all 0.5s ease-out; }
+  @media only screen and (min-width: 980px) {
+    .menu-btn {
+      visibility: hidden; } }
+  .menu-btn .btn-line {
+    width: 28px;
+    height: 2.5px;
+    margin: 0 0 5px 0;
+    background: black;
+    transition: all 0.5s ease-out; }
+  .menu-btn.close {
+    transform: rotate(180deg); }
+    .menu-btn.close .btn-line:nth-child(1) {
+      transform: rotate(55deg) translate(5px, 5px); }
+    .menu-btn.close .btn-line:nth-child(2) {
+      opacity: 0; }
+    .menu-btn.close .btn-line:nth-child(3) {
+      transform: rotate(-50deg) translate(8px, -4px); }
+
+.nav-item {
+  visibility: hidden;
+  transform: translate3d(600px, 0, 0);
+  transition: all 0.5s ease-out; }
+  .nav-item.show {
+    transform: translate3d(0, 0, 0);
+    visibility: visible; }
+  .nav-item.current > a {
+    color: purple; }
+
+body {
+  font-family: 'Josefin Sans', sans-serif; }
