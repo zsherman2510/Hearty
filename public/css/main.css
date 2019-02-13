@@ -6,12 +6,6 @@ nav {
   height: 50px; }
   nav #brand {
     font-family: 'Pacifico', cursive; }
-  nav #phone-number {
-    color: purple;
-    padding: .4rem 1rem; }
-    @media only screen and (max-width: 491px) {
-      nav #phone-number {
-        display: none; } }
 
 .menu-item {
   margin: 0 10px; }
