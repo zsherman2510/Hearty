@@ -2,6 +2,9 @@
 @import 'header';
 @import 'config';
 
+html {
+	overflow-x: hidden;
+}
 body {
 	font-family: 'Josefin Sans', sans-serif;
 }

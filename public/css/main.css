@@ -3,9 +3,16 @@ nav {
   justify-content: space-between;
   flex-direction: row;
   padding: 1rem 3rem 2rem;
-  height: 50px; }
+  height: 3vh;
+  border-bottom: 1px solid #eee; }
   nav #brand {
-    font-family: 'Pacifico', cursive; }
+    font-family: 'Pacifico', cursive;
+    color: #983afa;
+    font-size: 1.4rem; }
+
+a {
+  text-decoration: none;
+  color: #983afa; }
 
 .menu-item {
   margin: 0 10px; }
@@ -35,7 +42,7 @@ nav {
     width: 28px;
     height: 2.5px;
     margin: 0 0 5px 0;
-    background: black;
+    background: #fa983a;
     transition: all 0.5s ease-out; }
   .menu-btn.close {
     transform: rotate(180deg); }
@@ -55,6 +62,77 @@ nav {
     visibility: visible; }
   .nav-item.current > a {
     color: purple; }
+
+header {
+  position: relative;
+  height: 100vh;
+  border-bottom: #eee;
+  overflow: hidden; }
+
+.header-img {
+  background: url(/public/images/head-img.jpg);
+  height: 100vh;
+  background-position: center;
+  background-size: cover; }
+
+.container {
+  padding: 6rem 0rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%; }
+
+#header-text,
+#header-second-text,
+#phone-number,
+#button {
+  display: flex;
+  justify-content: center;
+  color: #fa983a; }
+
+a #button {
+  display: flex;
+  justify-content: center;
+  background: #983afa; }
+
+hr {
+  width: 30%;
+  justify-content: center; }
+
+#button {
+  margin: 0 auto;
+  width: 8rem;
+  border-radius: 20px;
+  border: 1px solid #983afa;
+  color: white;
+  padding: 15px;
+  background: #983afa;
+  justify-content: center; }
+
+#header-text {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 2.1rem; }
+  @media only screen and (min-width: 980px) {
+    #header-text {
+      font-size: 3rem; } }
+
+#header-second-text {
+  font-size: 1.2rem;
+  font-weight: 100; }
+  @media only screen and (min-width: 980px) {
+    #header-second-text {
+      font-size: 1.6rem; } }
+
+#phone-number {
+  font-size: 1.4rem; }
+  @media only screen and (min-width: 980px) {
+    #phone-number {
+      font-size: 1.8rem; } }
+
+html {
+  overflow-x: hidden; }
 
 body {
   font-family: 'Josefin Sans', sans-serif; }

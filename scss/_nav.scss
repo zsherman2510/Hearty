@@ -5,11 +5,19 @@ nav {
 	justify-content: space-between;
 	flex-direction: row;
 	padding: 1rem 3rem 2rem;
-	height: 50px;
+	height: 3vh;
+	border-bottom: 1px solid #eee;
 
 	#brand {
 		font-family: 'Pacifico', cursive;
+		color: $secondary-color;
+		font-size: 1.4rem;
 	}
+}
+
+a {
+	text-decoration: none;
+	color: $secondary-color;
 }
 
 .menu-item {
@@ -47,7 +55,7 @@ nav {
 		width: 28px;
 		height: 2.5px;
 		margin: 0 0 5px 0;
-		background: black;
+		background: $primary-color;
 		@include easeOut;
 	}
 
