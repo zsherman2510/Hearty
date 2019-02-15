@@ -1,0 +1,62 @@
+@import 'config';
+
+.photo-container {
+	display: flex;
+	flex-direction: column;
+	@media only screen and (min-width: 670px) {
+		flex-direction: row;
+	}
+
+	#food-photo {
+		background: url(/public/images/food-photo3.jpg);
+		background-size: cover;
+		background-position: center;
+		height: 33vh;
+		width: 100%;
+		@media only screen and (min-width: 670px) {
+			height: 100vh;
+		}
+	}
+
+	.col2 {
+		background: $primary-color;
+		position: relative;
+		width: 100%;
+		height: 33vh;
+		@media only screen and (min-width: 670px) {
+			height: 100vh;
+		}
+
+		h3 {
+			color: #eee;
+			font-size: 3rem;
+			margin: 10% auto;
+			text-align: center;
+			line-height: 120%;
+			@media only screen and (min-width: 670px) {
+				margin: 55% auto;
+				font-size: 3rem;
+			}
+		}
+	}
+	#food-photo2 {
+		position: relative;
+		background: url(/public/images/food-photo2.jpg);
+		background-size: cover;
+		background-position: center;
+		height: 33vh;
+		width: 100%;
+		@media only screen and (min-width: 670px) {
+			height: 100vh;
+		}
+	}
+}
+.bar {
+	padding: 2rem;
+
+	background: darkmagenta;
+	h1 {
+		color: #eee;
+		text-align: center;
+	}
+}

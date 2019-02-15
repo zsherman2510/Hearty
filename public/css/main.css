@@ -1,4 +1,5 @@
 nav {
+  background: #eee;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -67,13 +68,17 @@ header {
   position: relative;
   height: 100vh;
   border-bottom: #eee;
-  overflow: hidden; }
+  overflow: hidden;
+  width: 100vw;
+  padding: 0;
+  margin: 0; }
 
 .header-img {
   background: url(/public/images/head-img.jpg);
   height: 100vh;
   background-position: center;
-  background-size: cover; }
+  background-size: cover;
+  width: 100%; }
 
 .container {
   padding: 6rem 0rem;
@@ -131,8 +136,150 @@ hr {
     #phone-number {
       font-size: 1.8rem; } }
 
+.photo-container {
+  display: flex;
+  flex-direction: column; }
+  @media only screen and (min-width: 670px) {
+    .photo-container {
+      flex-direction: row; } }
+  .photo-container #food-photo {
+    background: url(/public/images/food-photo3.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 33vh;
+    width: 100%; }
+    @media only screen and (min-width: 670px) {
+      .photo-container #food-photo {
+        height: 100vh; } }
+  .photo-container .col2 {
+    background: #fa983a;
+    position: relative;
+    width: 100%;
+    height: 33vh; }
+    @media only screen and (min-width: 670px) {
+      .photo-container .col2 {
+        height: 100vh; } }
+    .photo-container .col2 h3 {
+      color: #eee;
+      font-size: 3rem;
+      margin: 10% auto;
+      text-align: center;
+      line-height: 120%; }
+      @media only screen and (min-width: 670px) {
+        .photo-container .col2 h3 {
+          margin: 55% auto;
+          font-size: 3rem; } }
+  .photo-container #food-photo2 {
+    position: relative;
+    background: url(/public/images/food-photo2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 33vh;
+    width: 100%; }
+    @media only screen and (min-width: 670px) {
+      .photo-container #food-photo2 {
+        height: 100vh; } }
+
+.bar {
+  padding: 2rem;
+  background: darkmagenta; }
+  .bar h1 {
+    color: #eee;
+    text-align: center; }
+
+.two {
+  display: flex;
+  flex-direction: column; }
+  @media only screen and (min-width: 980px) {
+    .two {
+      flex-direction: row; } }
+  .two #menu-img {
+    background: linear-gradient(rgba(58, 57, 57, 0.562), rgba(78, 78, 78, 0.4)), url(/public/images/menu-img.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center; }
+  .two #cater-img {
+    background: linear-gradient(rgba(56, 56, 56, 0.61), rgba(73, 73, 73, 0.4)), url(/public/images/cater.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center; }
+  .two .container-body {
+    margin: auto 0; }
+    .two .container-body #about-txt {
+      margin: auto 1.5rem; }
+      .two .container-body #about-txt .title {
+        color: #eee;
+        font-size: 5rem;
+        text-align: center; }
+      .two .container-body #about-txt .body {
+        color: #eee;
+        font-size: 1.5rem;
+        line-height: 6rem;
+        text-align: center; }
+      .two .container-body #about-txt #button {
+        margin: 50% auto;
+        font-size: 1.4rem;
+        width: 8rem;
+        border-radius: 20px;
+        border: 1px solid #fa983a;
+        color: white;
+        padding: 20px;
+        background: #fa983a;
+        justify-content: center; }
+
+#gallery {
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll; }
+  #gallery #social-img1 {
+    background: url(/public/images/social-img1.jpg);
+    display: flex;
+    height: 250px;
+    width: 100%;
+    background-size: cover;
+    background-position: center; }
+  #gallery #social-img2 {
+    background: url(/public/images/social-img2.jpg);
+    display: flex;
+    height: 250px;
+    width: 100%;
+    background-size: cover;
+    background-position: center; }
+  #gallery #social-img3 {
+    background: url(/public/images/social-img3.jpg);
+    display: flex;
+    height: 250px;
+    width: 100%;
+    background-size: cover;
+    background-position: center; }
+  #gallery #social-img4 {
+    background: url(/public/images/social-img5.jpg);
+    display: flex;
+    height: 250px;
+    width: 100%;
+    background-size: cover;
+    background-position: center; }
+  #gallery #social-img5 {
+    background: url(/public/images/table-photo.jpg);
+    display: flex;
+    height: 250px;
+    width: 100%;
+    background-size: cover;
+    background-position: center; }
+  #gallery #social-img6 {
+    background: url(/public/images/food-photo4.jpg);
+    display: flex;
+    height: 250px;
+    width: 100%;
+    background-size: cover;
+    background-position: center; }
+
 html {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  background: #3afa98; }
 
 body {
   font-family: 'Josefin Sans', sans-serif; }

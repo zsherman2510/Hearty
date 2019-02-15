@@ -1,0 +1,57 @@
+@import 'config';
+
+#gallery {
+	margin: 1rem 0;
+	display: flex;
+	flex-direction: row;
+	overflow-x: scroll;
+
+	#social-img1 {
+		background: url(/public/images/social-img1.jpg);
+		display: flex;
+		height: 250px;
+		width: 100%;
+		background-size: cover;
+		background-position: center;
+	}
+	#social-img2 {
+		background: url(/public/images/social-img2.jpg);
+		display: flex;
+		height: 250px;
+		width: 100%;
+		background-size: cover;
+		background-position: center;
+	}
+	#social-img3 {
+		background: url(/public/images/social-img3.jpg);
+		display: flex;
+		height: 250px;
+		width: 100%;
+		background-size: cover;
+		background-position: center;
+	}
+	#social-img4 {
+		background: url(/public/images/social-img5.jpg);
+		display: flex;
+		height: 250px;
+		width: 100%;
+		background-size: cover;
+		background-position: center;
+	}
+	#social-img5 {
+		background: url(/public/images/table-photo.jpg);
+		display: flex;
+		height: 250px;
+		width: 100%;
+		background-size: cover;
+		background-position: center;
+	}
+	#social-img6 {
+		background: url(/public/images/food-photo4.jpg);
+		display: flex;
+		height: 250px;
+		width: 100%;
+		background-size: cover;
+		background-position: center;
+	}
+}
