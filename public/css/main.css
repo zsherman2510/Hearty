@@ -15,6 +15,10 @@ a {
   text-decoration: none;
   color: #983afa; }
 
+.menu-mobile {
+  height: 100vh;
+  width: 100%; }
+
 .menu-item {
   margin: 0 10px; }
 
@@ -71,14 +75,16 @@ header {
   overflow: hidden;
   width: 100vw;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  scroll-snap-align: start; }
 
 .header-img {
   background: url(/public/images/head-img.jpg);
   height: 100vh;
   background-position: center;
   background-size: cover;
-  width: 100%; }
+  width: 100%;
+  z-index: -1; }
 
 .container {
   padding: 6rem 0rem;
@@ -136,6 +142,12 @@ hr {
     #phone-number {
       font-size: 1.8rem; } }
 
+.body {
+  scroll-snap-align: start; }
+
+#about {
+  padding: 1rem 0; }
+
 .photo-container {
   display: flex;
   flex-direction: column; }
@@ -188,6 +200,7 @@ hr {
     text-align: center; }
 
 .two {
+  padding: 1rem 0;
   display: flex;
   flex-direction: column; }
   @media only screen and (min-width: 980px) {
@@ -204,7 +217,11 @@ hr {
     width: 100%;
     height: 100vh;
     background-size: cover;
-    background-position: center; }
+    background-position: center;
+    margin-top: 1rem; }
+    @media only screen and (min-width: 980px) {
+      .two #cater-img {
+        margin: 0 0 0 1rem; } }
   .two .container-body {
     margin: auto 0; }
     .two .container-body #about-txt {
@@ -230,7 +247,6 @@ hr {
         justify-content: center; }
 
 #gallery {
-  margin: 1rem 0;
   height: 50vh;
   width: auto; }
   #gallery #social-img1 {
@@ -254,7 +270,9 @@ html {
   background: #3afa98; }
 
 body {
-  font-family: 'Josefin Sans', sans-serif; }
+  font-family: 'Josefin Sans', sans-serif;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll; }
 
 footer {
   background: darkmagenta;
