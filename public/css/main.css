@@ -79,7 +79,7 @@ header {
   scroll-snap-align: start; }
 
 .header-img {
-  background: url(../public/images/head-img.jpg);
+  background: url(../images/head-img.jpg);
   height: 100vh;
   background-position: center;
   background-size: cover;
@@ -155,7 +155,7 @@ hr {
     .photo-container {
       flex-direction: row; } }
   .photo-container #food-photo {
-    background: url(/public/images/food-photo3.jpg);
+    background: url(../images/food-photo3.jpg);
     background-size: cover;
     background-position: center;
     height: 33vh;
@@ -183,7 +183,7 @@ hr {
           font-size: 3rem; } }
   .photo-container #food-photo2 {
     position: relative;
-    background: url(/public/images/food-photo2.jpg);
+    background: url(../images/food-photo2.jpg);
     background-size: cover;
     background-position: center;
     height: 33vh;
@@ -207,13 +207,13 @@ hr {
     .two {
       flex-direction: row; } }
   .two #menu-img {
-    background: linear-gradient(rgba(58, 57, 57, 0.562), rgba(78, 78, 78, 0.4)), url(/public/images/menu-img.jpg);
+    background: linear-gradient(rgba(58, 57, 57, 0.562), rgba(78, 78, 78, 0.4)), url(../images/menu-img.jpg);
     height: 100vh;
     width: 100%;
     background-size: cover;
     background-position: center; }
   .two #cater-img {
-    background: linear-gradient(rgba(56, 56, 56, 0.61), rgba(73, 73, 73, 0.4)), url(/public/images/cater.jpg);
+    background: linear-gradient(rgba(56, 56, 56, 0.61), rgba(73, 73, 73, 0.4)), url(../images/cater.jpg);
     width: 100%;
     height: 100vh;
     background-size: cover;
@@ -250,7 +250,7 @@ hr {
   height: 50vh;
   width: auto; }
   #gallery #social-img1 {
-    background: linear-gradient(rgba(56, 56, 56, 0.61), rgba(73, 73, 73, 0.4)), url(/public/images/social-img1.jpg);
+    background: linear-gradient(rgba(56, 56, 56, 0.61), rgba(73, 73, 73, 0.4)), url(../images/social-img1.jpg);
     display: inline-block;
     height: 50vh;
     width: 100%;
