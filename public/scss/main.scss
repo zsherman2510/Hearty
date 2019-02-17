@@ -5,6 +5,7 @@
 @import 'two';
 @import 'gallery';
 
+
 html {
 	overflow-x: hidden;
 	background: $third-color;
@@ -44,4 +45,16 @@ footer {
 		color: #eee;
 		text-align: center;
 	}
+}
+
+[data-scroll] {
+	transition: all 2s;
+}
+[data-scroll="in"] {
+	opacity: 1;
+	transform: translateX(0);
+}
+[data-scroll="out"] {
+	opacity: 0;
+	transform: translateX(-200px);
 }

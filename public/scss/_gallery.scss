@@ -1,9 +1,7 @@
 @import 'config';
-
 #gallery {
 	height: 50vh;
 	width: auto;
-
 	#social-img1 {
 		background: linear-gradient(rgba(56, 56, 56, 0.61), rgba(73, 73, 73, 0.4)), url(../images/social-img1.jpg);
 		display: inline-block;
@@ -20,5 +18,16 @@
 				font-size: 3rem;
 			}
 		}
+	}
+	[data-scroll] {
+		transition: all 2s;
+	}
+	[data-scroll="in"] {
+		opacity: 1;
+		transform: translateX(0);
+	}
+	[data-scroll="out"] {
+		opacity: 0;
+		transform: translateX(-200px);
 	}
 }

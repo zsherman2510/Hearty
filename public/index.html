@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Pacifico" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
     
     <title>Eclectic Cafe</title>
 </head>
@@ -39,7 +40,7 @@
             <ul>
         </div>
     </nav>
-    <header class="header-img">
+    <header class="header-img" data-scroll>
             <div class="container">
                 <h1 id="header-text">Fresh. Food. Fast </h1>
                 <hr>
@@ -50,7 +51,7 @@
             </div>
     </header>
     
-    <div class="body">
+    <div class="body" data-scroll>
         <section id="about"> 
             <div class="photo-container">
                 <div id="food-photo"></div>
@@ -69,7 +70,7 @@
         <div class="bar">
             <h1>"Bring a Group of Friends and Unwind!"</h1>
         </div>
-        <section class="two">
+        <section data-scroll class="two">
             <div id="menu-img">
                 <div class="container-body">
                     <div id="about-txt">
@@ -105,13 +106,13 @@
         </section>
     </div>
     
-    <section id="gallery">
+    <section data-scroll id="gallery">
         <div class="photo" id="social-img1">
             <h1 class="title">Bring a friend and your first drink is FREE!</h1>
         </div>
     
     </section>
-    <footer>
+    <footer data-scroll>
         <div class="footer-container">
             <div id="social">
                 <h2 class="footer-title">Social</h2>
@@ -142,5 +143,8 @@
     
     
     <script src="./js/main.js"></script>
+    <script>
+        ScrollOut();
+    </script>
 </body>
 </html>

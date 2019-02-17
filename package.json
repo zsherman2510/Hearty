@@ -12,6 +12,7 @@
 	"homepage": "https://zsherman2510.github.io/Hearty-Cafe",
 	"dependencies": {
 		"gh-pages": "^2.0.1",
-		"node-sass": "^4.11.0"
+		"node-sass": "^4.11.0",
+		"scroll-out": "^2.2.7"
 	}
 }
