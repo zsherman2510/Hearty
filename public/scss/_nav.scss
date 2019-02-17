@@ -90,15 +90,23 @@ a {
 .nav-item {
 	visibility: hidden;
 	transform: translate3d(600px, 0, 0);
+	list-style: none;
+	background: #eee;
+	width: 100px;
+	height: 75px;
 	@include easeOut;
 
 	&.show {
 		// Slide in from right
 		transform: translate3d(0, 0, 0);
 		visibility: visible;
+		width: 100%;
 	}
 
 	&.current > a {
 		color: purple;
+	}
+	&:hover > a {
+		color: orange;
 	}
 }

@@ -61,12 +61,19 @@ a {
 .nav-item {
   visibility: hidden;
   transform: translate3d(600px, 0, 0);
+  list-style: none;
+  background: #eee;
+  width: 100px;
+  height: 75px;
   transition: all 0.5s ease-out; }
   .nav-item.show {
     transform: translate3d(0, 0, 0);
-    visibility: visible; }
+    visibility: visible;
+    width: 100%; }
   .nav-item.current > a {
     color: purple; }
+  .nav-item:hover > a {
+    color: orange; }
 
 header {
   position: relative;
