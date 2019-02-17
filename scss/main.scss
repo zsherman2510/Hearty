@@ -1,0 +1,47 @@
+@import 'config';
+@import 'nav';
+@import 'header';
+@import 'about';
+@import 'two';
+@import 'gallery';
+
+html {
+	overflow-x: hidden;
+	background: $third-color;
+}
+body {
+	font-family: 'Josefin Sans', sans-serif;
+	scroll-snap-type: y mandatory;
+	overflow-y: scroll;
+}
+
+footer {
+	background: darkmagenta;
+	color: #eee;
+	.footer-container {
+		padding: 2rem;
+		display: flex;
+		flex-direction: column;
+		flex-flow: row wrap;
+		justify-content: space-between;
+
+		h2 {
+			font-size: 2rem;
+		}
+		i.fab {
+			font-size: 2em;
+			margin: 5px;
+			color: white;
+		}
+	}
+}
+
+.bottom {
+	background: #333;
+	.copywrite {
+		padding: 1rem;
+
+		color: #eee;
+		text-align: center;
+	}
+}
