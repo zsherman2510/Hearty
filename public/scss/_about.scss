@@ -4,74 +4,68 @@
 }
 
 #about {
-	padding: 1rem 0;
-}
+	background: #eee;
+	height: 100%;
+	.left {
+		padding: 3rem;
+		padding-bottom: 0;
+		flex: 0 0 41.6%;
+		max-width: 41.6%;
 
-.photo-container {
-	display: flex;
-	flex-direction: column;
-	@media only screen and (min-width: 670px) {
-		flex-direction: row;
-	}
-	#food-photo {
-		background: url(../images/food-photo3.jpg);
-		background-size: cover;
-		background-position: center;
-		height: 33vh;
-		width: 100%;
-		@media only screen and (min-width: 670px) {
-			height: 100vh;
-		}
-	}
-	.col2 {
-		background: $primary-color;
-		position: relative;
-		width: 100%;
-		height: 33vh;
-		@media only screen and (min-width: 670px) {
-			height: 100vh;
-		}
 		h3 {
-			color: #eee;
-			font-size: 3rem;
-			margin: 10% auto;
-			text-align: center;
-			line-height: 120%;
-			@media only screen and (min-width: 670px) {
-				margin: 55% auto;
-				font-size: 3rem;
+			font-size: 36px;
+			color: rgb(27, 27, 27);
+			.brand-text {
+				color: $primary-color;
 			}
 		}
-	}
-	#food-photo2 {
-		position: relative;
-		background: url(../images/food-photo2.jpg);
-		background-size: cover;
-		background-position: center;
-		height: 33vh;
-		width: 100%;
-		@media only screen and (min-width: 670px) {
-			height: 100vh;
+		p {
+			color: rgb(146, 143, 143);
 		}
 	}
-}
+	.food-content {
+		margin-top: 3rem;
+		width: 100%;
+		height: 100%;
+		justify-content: center;
 
-.bar {
-	padding: 2rem;
-	background: darkmagenta;
-	h1 {
-		color: #eee;
-		text-align: center;
+		.food-container {
+			display: flex;
+			flex-flow: wrap;
+			padding: 2rem;
+			margin: 1rem;
+			justify-content: space-between;
+
+			.food {
+				display: flex;
+				flex-direction: column;
+				width: 33%;
+				margin-bottom: 3rem;
+				p {
+					color: grey;
+					font-size: 13px;
+				}
+				.food-img1 {
+					background: url(../images/food-photo.jpg);
+					width: 300px;
+					height: 300px;
+					background-size: cover;
+					background-position: center;
+				}
+			}
+		}
 	}
 }
 
 [data-scroll] {
 	transition: all 2s;
 }
+
 [data-scroll="in"] {
 	opacity: 1;
 	transform: translateX(0);
 }
+
 [data-scroll="out"] {
 	opacity: 0;
 	transform: translateX(-200px);

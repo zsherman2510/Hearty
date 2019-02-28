@@ -11,19 +11,17 @@ header {
 
 .header-img {
 	background: url(../images/head-img.jpg);
-	height: 100vh;
-	background-position: center;
 	background-size: cover;
-	width: 100%;
+	background-position: center;
 	z-index: -1;
 }
 
 .container {
-	padding: 6rem 0rem;
-	margin: 0 auto;
 	display: flex;
+	align-items: left;
 	flex-direction: column;
-	justify-content: center;
+	padding: 3rem;
+	margin-top: 4rem;
 	width: 90%;
 }
 
@@ -31,19 +29,17 @@ header {
 #header-second-text,
 #phone-number {
 	display: flex;
-	justify-content: center;
-	color: $secondary-color;
+	justify-content: left;
+	color: #eee;
 }
 
-hr {
-	width: 30%;
-	justify-content: center;
+a {
+	cursor: pointer;
 }
 
 #button {
 	cursor: pointer;
 	display: flex;
-	margin: 0 auto;
 	width: 8rem;
 	border-radius: 20px;
 	border: 1px solid $primary-color;

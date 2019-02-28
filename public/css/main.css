@@ -1,5 +1,5 @@
 nav {
-  background: #eee;
+  background: white;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -8,12 +8,12 @@ nav {
   border-bottom: 1px solid #eee; }
   nav #brand {
     font-family: 'Pacifico', cursive;
-    color: #983afa;
+    color: #fa983a;
     font-size: 1.4rem; }
 
 a {
   text-decoration: none;
-  color: #983afa; }
+  color: #fa983a; }
 
 .menu-mobile {
   height: 100vh;
@@ -87,35 +87,31 @@ header {
 
 .header-img {
   background: url(../images/head-img.jpg);
-  height: 100vh;
-  background-position: center;
   background-size: cover;
-  width: 100%;
+  background-position: center;
   z-index: -1; }
 
 .container {
-  padding: 6rem 0rem;
-  margin: 0 auto;
   display: flex;
+  align-items: left;
   flex-direction: column;
-  justify-content: center;
+  padding: 3rem;
+  margin-top: 4rem;
   width: 90%; }
 
 #header-text,
 #header-second-text,
 #phone-number {
   display: flex;
-  justify-content: center;
-  color: #983afa; }
+  justify-content: left;
+  color: #eee; }
 
-hr {
-  width: 30%;
-  justify-content: center; }
+a {
+  cursor: pointer; }
 
 #button {
   cursor: pointer;
   display: flex;
-  margin: 0 auto;
   width: 8rem;
   border-radius: 20px;
   border: 1px solid #fa983a;
@@ -149,58 +145,45 @@ hr {
   scroll-snap-align: start; }
 
 #about {
-  padding: 1rem 0; }
-
-.photo-container {
-  display: flex;
-  flex-direction: column; }
-  @media only screen and (min-width: 670px) {
-    .photo-container {
-      flex-direction: row; } }
-  .photo-container #food-photo {
-    background: url(../images/food-photo3.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 33vh;
-    width: 100%; }
-    @media only screen and (min-width: 670px) {
-      .photo-container #food-photo {
-        height: 100vh; } }
-  .photo-container .col2 {
-    background: #fa983a;
-    position: relative;
+  background: #eee;
+  height: 100%; }
+  #about .left {
+    padding: 3rem;
+    padding-bottom: 0;
+    flex: 0 0 41.6%;
+    max-width: 41.6%; }
+    #about .left h3 {
+      font-size: 36px;
+      color: #1b1b1b; }
+      #about .left h3 .brand-text {
+        color: #fa983a; }
+    #about .left p {
+      color: #928f8f; }
+  #about .food-content {
+    margin-top: 3rem;
     width: 100%;
-    height: 33vh; }
-    @media only screen and (min-width: 670px) {
-      .photo-container .col2 {
-        height: 100vh; } }
-    .photo-container .col2 h3 {
-      color: #eee;
-      font-size: 3rem;
-      margin: 10% auto;
-      text-align: center;
-      line-height: 120%; }
-      @media only screen and (min-width: 670px) {
-        .photo-container .col2 h3 {
-          margin: 55% auto;
-          font-size: 3rem; } }
-  .photo-container #food-photo2 {
-    position: relative;
-    background: url(../images/food-photo2.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 33vh;
-    width: 100%; }
-    @media only screen and (min-width: 670px) {
-      .photo-container #food-photo2 {
-        height: 100vh; } }
-
-.bar {
-  padding: 2rem;
-  background: darkmagenta; }
-  .bar h1 {
-    color: #eee;
-    text-align: center; }
+    height: 100%;
+    justify-content: center; }
+    #about .food-content .food-container {
+      display: flex;
+      flex-flow: wrap;
+      padding: 2rem;
+      margin: 1rem;
+      justify-content: space-between; }
+      #about .food-content .food-container .food {
+        display: flex;
+        flex-direction: column;
+        width: 33%;
+        margin-bottom: 3rem; }
+        #about .food-content .food-container .food p {
+          color: grey;
+          font-size: 13px; }
+        #about .food-content .food-container .food .food-img1 {
+          background: url(../images/food-photo.jpg);
+          width: 300px;
+          height: 300px;
+          background-size: cover;
+          background-position: center; }
 
 [data-scroll] {
   transition: all 2s; }
@@ -214,51 +197,33 @@ hr {
   transform: translateX(-200px); }
 
 .two {
-  padding: 1rem 0;
-  display: flex;
-  flex-direction: column; }
+  background: url(../images/section-two.jpg);
+  background-size: cover;
+  background-position: center;
+  height: auto;
+  padding: 2rem 0; }
+  .two .container-two {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    color: #eee; }
+    .two .container-two h1 {
+      font-size: 36px; }
+    .two .container-two p {
+      font-size: 18px; }
+    .two .container-two a {
+      cursor: pointer;
+      color: white;
+      margin-top: 1rem;
+      width: 150px;
+      text-align: center; }
+      .two .container-two a.btn {
+        padding: 15px;
+        background: #fa983a;
+        border-radius: 30px; }
   @media only screen and (min-width: 980px) {
     .two {
       flex-direction: row; } }
-  .two #menu-img {
-    background: linear-gradient(rgba(58, 57, 57, 0.562), rgba(78, 78, 78, 0.4)), url(../images/menu-img.jpg);
-    height: 100vh;
-    width: 100%;
-    background-size: cover;
-    background-position: center; }
-  .two #cater-img {
-    background: linear-gradient(rgba(56, 56, 56, 0.61), rgba(73, 73, 73, 0.4)), url(../images/cater.jpg);
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    margin-top: 1rem; }
-    @media only screen and (min-width: 980px) {
-      .two #cater-img {
-        margin: 0 0 0 1rem; } }
-  .two .container-body {
-    margin: auto 0; }
-    .two .container-body #about-txt {
-      margin: auto 1.5rem; }
-      .two .container-body #about-txt .title {
-        color: #eee;
-        font-size: 5rem;
-        text-align: center; }
-      .two .container-body #about-txt .body {
-        color: #eee;
-        font-size: 1.5rem;
-        line-height: 6rem;
-        text-align: center; }
-      .two .container-body #about-txt #button {
-        margin: 50% auto;
-        font-size: 1.4rem;
-        width: 8rem;
-        border-radius: 20px;
-        border: 1px solid #fa983a;
-        color: white;
-        padding: 20px;
-        background: #fa983a;
-        justify-content: center; }
   .two [data-scroll] {
     transition: all 2s; }
   .two [data-scroll="in"] {
@@ -297,12 +262,15 @@ hr {
 
 html {
   overflow-x: hidden;
-  background: #3afa98; }
+  padding: 0;
+  margin: 0; }
 
 body {
   font-family: 'Josefin Sans', sans-serif;
   scroll-snap-type: y mandatory;
-  overflow-y: scroll; }
+  overflow-y: scroll;
+  padding: 0;
+  margin: 0; }
 
 footer {
   background: darkmagenta;

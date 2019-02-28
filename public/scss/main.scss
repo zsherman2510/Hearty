@@ -5,15 +5,17 @@
 @import 'two';
 @import 'gallery';
 
-
 html {
 	overflow-x: hidden;
-	background: $third-color;
+	padding: 0;
+	margin: 0;
 }
 body {
 	font-family: 'Josefin Sans', sans-serif;
 	scroll-snap-type: y mandatory;
 	overflow-y: scroll;
+	padding: 0;
+	margin: 0;
 }
 
 footer {
