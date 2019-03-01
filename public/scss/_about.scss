@@ -37,9 +37,10 @@
 				margin: 10px;
 				width: 300px;
 				margin-bottom: 3rem;
+
 				p {
-					color: grey;
 					font-size: 13px;
+					color: grey;
 				}
 				.food-img1 {
 					background: url(../imagecompressor/food-photo-min.jpg);
@@ -99,13 +100,17 @@
 		form {
 			display: flex;
 			flex-direction: column;
+			width: 100%;
+			align-items: center;
 			input[type="text"] {
+				width: 350px;
 				margin: 10px;
 				padding: 10px;
 				border-radius: 5px;
 			}
 			input[type="submit"] {
 				margin: 10px;
+				width: 350px;
 			}
 		}
 	}
