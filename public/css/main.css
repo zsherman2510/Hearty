@@ -84,7 +84,7 @@ header {
   scroll-snap-align: start; }
 
 .header-img {
-  background: url(../images/head-img.jpg);
+  background: url(../imagecompressor/head-img-min.jpg);
   background-size: cover;
   background-position: center;
   z-index: -1; }
@@ -176,7 +176,7 @@ a {
           color: grey;
           font-size: 13px; }
         #about .food-content .food-container .food .food-img1 {
-          background: url(../images/food-photo.jpg);
+          background: url(../imagecompressor/food-photo-min.jpg);
           width: 300px;
           height: 300px;
           background-size: cover;
@@ -195,7 +195,7 @@ a {
       height: 100%;
       width: 300px; }
       .three .drinks-container .drinks .drink-img1 {
-        background: url(../images/food-photo4.jpg);
+        background: url(../imagecompressor/food-photo4-min.jpg);
         height: 300px;
         width: 300px;
         background-size: cover;
@@ -203,7 +203,7 @@ a {
 
 .booking {
   height: 100%;
-  background: url(../images/booking-img.jpg);
+  background: url(../imagecompressor/booking-img-min.jpg);
   background-position: center;
   background-size: cover; }
   .booking .container-booking {
@@ -248,7 +248,7 @@ a {
   transform: translateX(-200px); }
 
 .two {
-  background: url(../images/section-two.jpg);
+  background: url(../imagecompressor/section-two-min.jpg);
   background-size: cover;
   background-position: center;
   height: auto; }
@@ -282,33 +282,6 @@ a {
     opacity: 1;
     transform: translateX(0); }
   .two [data-scroll="out"] {
-    opacity: 0;
-    transform: translateX(-200px); }
-
-#gallery {
-  height: 50vh;
-  width: auto; }
-  #gallery #social-img1 {
-    background: linear-gradient(rgba(56, 56, 56, 0.61), rgba(73, 73, 73, 0.4)), url(../images/social-img1.jpg);
-    display: inline-block;
-    height: 50vh;
-    width: 100%;
-    background-size: cover;
-    background-position: center; }
-    #gallery #social-img1 .title {
-      color: #eee;
-      text-align: center;
-      font-size: 2rem;
-      margin: 8rem auto; }
-      @media only screen and (min-width: 980px) {
-        #gallery #social-img1 .title {
-          font-size: 3rem; } }
-  #gallery [data-scroll] {
-    transition: all 2s; }
-  #gallery [data-scroll="in"] {
-    opacity: 1;
-    transform: translateX(0); }
-  #gallery [data-scroll="out"] {
     opacity: 0;
     transform: translateX(-200px); }
 

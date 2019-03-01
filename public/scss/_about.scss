@@ -42,7 +42,7 @@
 					font-size: 13px;
 				}
 				.food-img1 {
-					background: url(../images/food-photo.jpg);
+					background: url(../imagecompressor/food-photo-min.jpg);
 					width: 300px;
 					height: 300px;
 					background-size: cover;
@@ -66,7 +66,7 @@
 			height: 100%;
 			width: 300px;
 			.drink-img1 {
-				background: url(../images/food-photo4.jpg);
+				background: url(../imagecompressor/food-photo4-min.jpg);
 				height: 300px;
 				width: 300px;
 				background-size: cover;
@@ -78,7 +78,7 @@
 
 .booking {
 	height: 100%;
-	background: url(../images/booking-img.jpg);
+	background: url(../imagecompressor/booking-img-min.jpg);
 	background-position: center;
 	background-size: cover;
 	.container-booking {
